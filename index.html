@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucy | 43-Year-Old Artist & Melodist</title>
+    <style>
+        /* CSS RESET & BASE STYLES */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #1a1618; color: #fff1f2; line-height: 1.6; overflow-x: hidden; }
+        
+        /* NAVIGATION - MATCHING PREVIOUS BIO STYLE */
+        nav { background: #2d2429; padding: 1rem 5%; position: fixed; width: 100%; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #f472b6; }
+        nav .logo { font-size: 1.5rem; font-weight: bold; color: #f472b6; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        nav ul li a:hover { color: #f472b6; }
+
+        /* HERO SECTION */
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(26, 22, 24, 0.8), rgba(26, 22, 24, 0.8)), url('https://images.unsplash.com'); background-size: cover; background-position: center; padding: 0 20px; }
+        .hero h1 { font-size: 4rem; margin-bottom: 10px; color: #f472b6; text-shadow: 0 0 20px rgba(244, 114, 182, 0.5); }
+        .hero p { font-size: 1.5rem; max-width: 700px; color: #fda4af; }
+
+        /* SECTION STYLING */
+        section { padding: 100px 10%; border-bottom: 1px solid #3d2f36; }
+        h2 { font-size: 2.5rem; margin-bottom: 30px; text-align: center; color: #f472b6; border-bottom: 2px solid #4c3a43; display: inline-block; padding-bottom: 10px; }
+        .container { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; }
+
+        /* ABOUT CARDS */
+        .about-card { background: #2d2429; padding: 30px; border-radius: 15px; border-left: 5px solid #f472b6; flex: 1; min-width: 300px; transition: 0.3s; }
+        .about-card:hover { transform: translateY(-5px); background: #3a2e35; }
+        
+        /* CREATIVE METRICS (SKILLS) */
+        .skills-container { width: 100%; max-width: 800px; margin: 0 auto; }
+        .skill-bar { margin-bottom: 20px; }
+        .skill-name { display: flex; justify-content: space-between; margin-bottom: 5px; font-weight: 600; }
+        .bar-bg { background: #4c3a43; height: 12px; border-radius: 10px; }
+        .bar-fill { background: #f472b6; height: 100%; border-radius: 10px; box-shadow: 0 0 10px #f472b6; width: 0; transition: 2s ease-in-out; }
+
+        /* GALLERY & TIPS GRID */
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .grid-item { background: #2d2429; padding: 25px; border-radius: 10px; border: 1px solid #4c3a43; transition: 0.3s; }
+        .grid-item:hover { border-color: #f472b6; transform: scale(1.02); }
+        .grid-item h3 { color: #f472b6; margin-bottom: 12px; }
+
+        /* INFO BOXES */
+        .info-box { background: #1a1618; border: 2px dashed #f472b6; padding: 30px; border-radius: 15px; margin-top: 20px; text-align: center; }
+
+        /* FOOTER */
+        footer { text-align: center; padding: 50px; background: #110e0f; color: #8e717c; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            nav ul { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION - LUCY EDITION -->
+    <nav>
+        <div class="logo">Lucy.Art()</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Creative</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <h1>Hi, I'm Lucy</h1>
+        <p>A 43-year-old creator blending the rhythm of music with the canvas of life.</p>
+        <div style="margin-top: 30px;">
+            <a href="#projects" style="background: #f472b6; color: #1a1618; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold;">View My Gallery</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <center><h2>The Creative Soul</h2></center>
+        <div class="container">
+            <div class="about-card">
+                <h3>Visual Artistry</h3>
+                <p>Lucy specializes in abstract expressionism and digital illustration. At 43, she has mastered the balance between traditional oil painting and modern digital tools, proving that true art evolves with the artist.</p>
+            </div>
+            <div class="about-card">
+                <h3>Musical Theory</h3>
+                <p>Music is Lucy’s second language. Whether she is composing on the piano or exploring ambient soundscapes, her work is heavily influenced by the interplay of light and sound, creating a multi-sensory experience.</p>
+            </div>
+        </div>
+        <div class="info-box" style="margin-top: 40px;">
+            <h3>Lucy's Creative Mantra</h3>
+            <p>"Every stroke is a note, and every melody is a colour."</p>
+        </div>
+    </section>
+
+    <!-- CREATIVE SKILLS (BARS) -->
+    <section id="skills" style="background: #1e1a1c;">
+        <center><h2>Artistic Proficiency</h2></center>
+        <div class="skills-container">
+            <div class="skill-bar">
+                <div class="skill-name"><span>Digital Illustration</span><span>98%</span></div>
+                <div class="bar-bg"><div class="bar-fill" style="width: 98%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-name"><span>Composition & Piano</span><span>92%</span></div>
+                <div class="bar-bg"><div class="bar-fill" style="width: 92%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-name"><span>Oil Painting</span><span>85%</span></div>
+                <div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-name"><span>Colour Theory</span><span>100%</span></div>
+                <div class="bar-bg"><div class="bar-fill" style="width: 100%;"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <center><h2>Current Pursuits</h2></center>
+        <div class="grid-3">
+            <div class="grid-item">
+                <h3>Gallery Exhibition</h3>
+                <p>Curating a series of 12 canvas pieces focused on the "Echoes of Silence," scheduled for local display this autumn.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Ambient Album</h3>
+                <p>Producing a self-titled EP that combines lo-fi beats with classical piano arrangements for creative focus.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Art Mentorship</h3>
+                <p>Teaching weekend workshops to aspiring artists, focusing on finding their unique voice through mixed media.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIPS SECTION -->
+    <section id="tips" style="background: #1e1a1c;">
+        <center><h2>Lucy's Creative Tips</h2></center>
+        <div class="grid-3">
+            <div class="grid-item">
+                <h3>1. The Morning Page</h3>
+                <p>Always spend 10 minutes sketching or writing lyrics before checking your phone to keep your inner channel clear.</p>
+            </div>
+            <div class="grid-item">
+                <h3>2. Limit the Palette</h3>
+                <p>True creativity flourishes under constraints. Try making a masterpiece using only three colours and one instrument.</p>
+            </div>
+            <div class="grid-item">
+                <h3>3. Embrace Imperfection</h3>
+                <p>At 43, I've learned that the most beautiful part of a song is often the accidental note. Let your art breathe.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <center><h2>Collaborate with Lucy</h2></center>
+        <div class="container">
+            <div class="about-card" style="max-width: 600px; text-align: center;">
+                <p>Interested in a commission or a musical score? Lucy is always open to connecting with fellow dreamers.</p>
+                <form style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px;">
+                    <input type="text" placeholder="Your Name" style="padding: 10px; border-radius: 5px; border: none; background: #1a1618; color: white;">
+                    <input type="email" placeholder="Your Email" style="padding: 10px; border-radius: 5px; border: none; background: #1a1618; color: white;">
+                    <textarea placeholder="Tell me about your vision..." rows="4" style="padding: 10px; border-radius: 5px; border: none; background: #1a1618; color: white;"></textarea>
+                    <button type="submit" style="background: #f472b6; color: #1a1618; padding: 10px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Lucy's Studio. All rights reserved.</p>
+        <p>Crafted with &hearts; and Pink Hue.</p>
+    </footer>
+
+</body>
+</html>
